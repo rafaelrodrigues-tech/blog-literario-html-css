@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #2e2e2e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  color: #1e3a5f;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > a,
+.dropdown-container > a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu > a:hover,
+.dropdown-container > a:hover {
+  color: #4caf50;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #2e2e2e;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown a:hover {
+  background-color: #f5f5f5;
+  color: #4caf50;
+  text-decoration: underline;
+}
+
+.dropdown-container:hover .dropdown {
+  display: flex;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e3a5f;
+  font-family: 'Merriweather', serif;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.content .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.content .text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4caf50;
+  font-family: 'Merriweather', serif;
+}
+
+.content .text p {
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+.content .image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.content .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content.contact {
+  justify-content: center;
+}
+
+.content.contact h2 {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #2e2e2e;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #f9844a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e67336;
+}
+
+.review-box {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.review-box h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #181b20;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.review-box img {
+  max-width: 300px;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.review-box p {
+  color: #2e2e2e;
+  line-height: 1.6;
+  margin-top: 1rem;
+  text-align: justify;
+}
